@@ -20,13 +20,6 @@ app.use('/special',function(req, res, next){
 	next();
 });
 
-app.get('/', function(req, res){
-	//res.send('WELCOME TO TWITTER.JS POWERED BY SERVERS IN NORWAY');
-	const people = [{name: 'Full'}, {name: 'Stacker'}, {name: 'Son'}];
-	res.render( 'index', {title: 'Hall of Fame', people: people} );
-
-});
-
 app.listen(port, function(req, res){
 	console.log('Server is running...');
 
