@@ -4,9 +4,7 @@ const nunjucks = require('nunjucks');
 const app = express(); // creates an instance of an express application
 
 let port =3000;
-
-
-
+// TEST PUSH ON GITHUB
 
 app.use(function(req, res, next){
 	console.log(req.method, res.statusCode);
